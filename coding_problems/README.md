@@ -32,7 +32,7 @@ B = [1,2,-3,6,4,-2,-1]
 print(solution(B))
 
 ```
-# P3- Compare two consecutive items in a list
+## P2- Compare two consecutive items in a list
 More details are found here
 https://stackoverflow.com/questions/24577688/compare-current-item-to-next-item-in-a-python-list
 
@@ -52,4 +52,4 @@ for item in compare:
     j +=1
 ```
 
-# P4 -
+## P3 -

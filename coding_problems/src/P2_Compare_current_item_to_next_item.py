@@ -1,9 +1,6 @@
 # More details overthis issue can be found here
 #https://stackoverflow.com/questions/24577688/compare-current-item-to-next-item-in-a-python-list
 
-
-
-
 mylist = [1, 2, 2, 4, 2, 3]
 for i, j in enumerate(mylist[:-1]):
     if j  == mylist[i+1]:

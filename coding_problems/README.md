@@ -1,8 +1,9 @@
 # Collecting Several programming puzzles
 Here i have collected several coding puzzles and ideas that I found them interesting.
 
-## C1- Find the smallest integer not in a list.
+## P1- Find the smallest integer not in a list.
 If the data structure can be mutated in place and supports random access then you can do it in O(N) time and O(1) additional space. Just go through the array sequentially and for every index write the value at the index to the index specified by value, recursively placing any value at that location to its place and throwing away values > N. Then go again through the array looking for the spot where value doesn't match the index - that's the smallest value not in the array. This results in at most 3N comparisons and only uses a few values worth of temporary space.
+read more here:https://stackoverflow.com/questions/1586858/find-the-smallest-integer-not-in-a-list
 
 ```py
 def solution(A):

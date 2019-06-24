@@ -1,5 +1,4 @@
 
-
 def solution(A):
     index = 0
     target = []
@@ -20,7 +19,28 @@ def solution(A):
     return target[count-1] + 1
 
 
-A = [1,2,3,6,4,2,1]
+
 B = [1,2,-3,6,4,-2,-1]
 
-print(solution(B))
+# print(solution(B))
+
+# ------------------------------------------------
+# Here is another solution that I found here:
+A = [1,2,3,6,4,2,1]
+
+def solution2(A):
+    print(f"A befor sorting is = {A}")
+    A = sorted(A)
+    print(f"A after sorting is = {A}")
+
+print(10*"--","Sort and Sorted",10*"--")
+A.sort()
+sortedA = [item for item in A]
+sortedAplus = [item for item in sorted(A)]
+
+solution2(A)
+
+print(max(A),min(A))
+print(A)
+print(sortedA)
+print(sortedAplus)

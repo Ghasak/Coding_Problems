@@ -1,4 +1,4 @@
-# Collecting Several programming puzzles
+# A Collection of Several programming puzzles and challenges
 Here i have collected several coding puzzles and ideas that I found them interesting.
 
 ## P1- Find the smallest integer not in a list.
@@ -32,3 +32,24 @@ B = [1,2,-3,6,4,-2,-1]
 print(solution(B))
 
 ```
+# P3- Compare two consecutive items in a list
+More details are found here
+https://stackoverflow.com/questions/24577688/compare-current-item-to-next-item-in-a-python-list
+
+```py
+mylist = [1, 2, 2, 4, 2, 3]
+for i, j in enumerate(mylist[:-1]):
+    if j  == mylist[i+1]:
+        mylist[i] = "foo"
+        mylist[i+1] = "foo"
+print (mylist)
+[1, 'foo', 'foo', 4, 2, 3]
+
+j = 1
+compare = [1,2,5,3,2,4,4,2,6]
+for item in compare:
+    print(item,compare[j])
+    j +=1
+```
+
+# P4 -

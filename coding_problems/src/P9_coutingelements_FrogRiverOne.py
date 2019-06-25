@@ -63,10 +63,45 @@ for time, position in enumerate(sorteddistance):
     if position == max(A_unique):
         print(time-1)
 
-
+print(10*"-","Solution using python by converting a CPP solution",10*"-")
 # for position in A_unique:
 #     print(position)
 
 # print(A_unique)
 
 # print(sorteddistance)
+
+# int solution(int X, vector<int> &A) {
+#     bool landed[X];
+
+#     for (int i = 0; i < X; i++) {
+#         landed[i] = false;
+#     }
+
+#     for(int i = 0; i < A.size(); i++) {
+#         if (!landed[A[i] - 1]) {
+#             landed[A[i] - 1] = true;
+
+#             if (--X == 0) {
+#                 return i;
+#             }
+#         }
+#     }
+
+#     return -1;
+# }
+
+landed = []
+for i in range(X+1):
+    if i < X:
+        landed.append("false")
+    else:
+        landed.append("true")
+for i in range(len(A)):
+    if not landed[A[i]-1]:
+        landed[A[i]-1] = "True"
+        X = X-1
+        if X == 0:
+            print(i)
+
+print(landed)

@@ -55,3 +55,5 @@ def solution(X, Y, D):
     return abs(jumps-1)
 
 print(solution(85,10,30))
+
+

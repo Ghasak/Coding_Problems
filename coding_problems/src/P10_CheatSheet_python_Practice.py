@@ -112,3 +112,35 @@ newest_user = users[-1]
 users.insert(3,'ghasak')
 print(users)
 
+# Deleting an element by its position
+del users[-1]
+# Removing an item by its value
+users.remove('mia')
+print(users)
+
+# sorting a list permanently
+
+examinelist = [9,8,7,6,5,4,3,2,1]
+print(10*'-','Original List',10*'-')
+print(examinelist)
+examinelist.sort()
+print(10*'-','Applying .sort()',10*'-')
+print(examinelist)
+
+examinelist.sort(reverse = True)
+print(10*'-','Applying .sort(reverse = True)',10*'-')
+print(examinelist)
+
+# Looping thorugh a list
+for user in users:
+    print(user)
+
+
+# Slicing a list
+print(10*"-","Slicing a list",10*"-")
+finishers = ['kai','abe','ada','gus','zoe']
+print(finishers)
+first_three = finishers[:3]
+print(first_three)
+first_three_2 = finishers[-3:]
+print(first_three_2)
